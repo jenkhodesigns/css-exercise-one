@@ -1,36 +1,42 @@
-body
+#body
+{
   font-size: 14px;
 }
 
-nav {
-  background color: yellow;
+#nav {
+  background-color: yellow;
   height: 100px;
   margin-top: -10px;
   position: fixed;
   width: 100%;
+}
 
-
-section {
+#section {
   margin: 0 auto;
   width: 60%;
 }
 
 h1 {
-  font-family sans-serif;
+  font-family: sans-serif;
   font-size: 2em;
 }
 
 .example, h3 {
   padding-top: 30px;
-  text-align center
+  text-align: center;
 }
 
 h3 {
   font-size: 1.3em;
 }
 
-.element {
+div.element {
   background-color: green;
   height: 100px;
   margin 10px 0;
   width: 100%;
+}
+/*** This code selects the last 3 divs and changes the background color to red using the nth-last-child pseudoselector and -n+3 selects the last 3 items in the list ***/
+div:nth-last-child(-n+3) {
+  background-color: red;
+}
